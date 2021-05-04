@@ -1,0 +1,14 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+var teacher_1 = require("./model/teacher");
+var student_1 = require("./model/student");
+var t = new teacher_1.TeacherClass();
+t.username = "zhangsan";
+t.password = "1231";
+teacher_1.teacherModel.add(t);
+teacher_1.teacherModel.update(t, "123");
+var s = new student_1.StudentClass();
+s.username = "lisi";
+s.password = "55555";
+teacher_1.teacherModel.add(s);
+student_1.studentModel.update(s, "123");
